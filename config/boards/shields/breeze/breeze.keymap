@@ -24,11 +24,11 @@
 // |  SHFT |  Z  |  X  |  C    |  V   |  B   |                               |  N   |  M    |  ,    |  .   |   /   |  RET | |  L  |  DN  |  R   |
 //                     | LOWER | ALT  | GUI  | LOWER/SPACE |   | RAISE/SPACE | BKSP | DEL   | RAISE |
 			bindings = <
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4   &kp N5                           &kp N6   &kp N7   &kp N8    &kp N9  &kp N0   &kp MINUS  &kp BSLH  &kp HOME &kp PG_UP
-&kp TAB   &kp Q  &kp W  &kp E   &kp R    &kp T                            &kp Y    &kp U    &kp I     &kp O   &kp P    &kp LBKT   &kp RBKT  &kp END  &kp PG_DN
-&kp LCTRL &kp A  &kp S  &kp D   &kp F    &kp G                            &kp H    &kp J    &kp K     &kp L   &kp SEMI &kp APOS              &kp UP 
-&kp LSHFT &kp Z  &kp X  &kp C   &kp V    &kp B                            &kp N    &kp M    &kp COMMA &kp DOT &kp FSLH &kp RET    &kp LEFT  &kp DOWN  &kp RIGHT
-                        &mo 1   &kp LALT &kp LGUI &lt 1 SPACE &lt 2 SPACE &kp BSPC &kp DEL &mo 2
+&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5        &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC        &kp MINUS &kp EQUAL &kp GRAVE
+&kp TAB &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U &kp I &kp O &kp P &kp RET        &kp LBKT &kp RBKT &kp BSLH
+&kp CAPS &kp A &kp S &kp D &kp F &kp G        &kp H &kp J &kp K &kp L &kp SEMI &kp APOS        &kp UP 
+&kp LSHFT &kp Z &kp X &kp C &kp V &kp B        &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT        &kp LEFT  &kp DOWN  &kp RIGHT
+        &kp LCTRL &kp LGUI &kp LALT &lt 1 SPACE        &lt 2 RET &kp RALT &kp K_CMENU &kp RCTRL
 			>;
 		};
 
@@ -40,11 +40,11 @@
 // |  CAPS | CMD-Z| CUT | COPY | PASTE |  {   |                   |  }   |      |      |      |       |       | | Prev  | Vol- | Next | 
 //                      |      |       |      |        |  |  RET  |      |  INS |ADJUST|
 			bindings = <
-&kp F1      &kp F2      &kp F3     &kp F4     &kp F5    &kp F6                       &kp F7   &kp F8   &kp F9  &kp F10   &kp F11 &kp F12 &kp EQUAL  &kp PSCRN     &trans    
-&kp LG(TAB) &trans      &trans     &trans     &trans    &kp LBKT                     &kp RBKT &trans   &trans  &trans    &trans  &trans  &trans     &kp C_MUTE    &kp C_PLAY_PAUSE 
-&trans      &kp LG(A)   &kp LG(SPACE) &trans     &trans    &trans                       &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans  &trans             &kp C_VOL_UP
-&kp CAPS    &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(V) &kp LBRC                   &kp RBRC &trans   &trans  &trans    &trans  &trans  &kp C_PREV &kp C_VOL_DN  &kp C_NEXT
-                                &trans     &trans    &trans    &trans   &kp RET   &trans   &kp INS  &mo 3
+&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6        &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12        &kp INS &kp HOME &kp PG_UP
+&trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans        &kp DEL &kp END &kp PG_UP
+&trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans        &trans
+&trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans        &trans &trans &trans
+        &trans &trans &trans &trans        &trans &trans &trans &trans        
 			>;
 		};
 
@@ -56,11 +56,11 @@
 // |     |CTRL-Z|CTRL-X|CTRL-C|CTRL-V|        |                   |      |      |      |      |       |       | |     |      |      | 
 //                     |      |      |        |  BKSP  |  |       |      |      |      |
 			bindings = <
-&kp ESC &trans    &trans &trans  &trans  &trans                       &trans   &trans     &trans    &trans  &trans    &trans     &trans &trans &trans 
-&trans  &trans    &trans &trans  &trans  &trans                       &trans   &trans     &trans    &trans  &trans    &trans     &trans &trans &trans
-&trans  &kp LC(A) &trans &trans  &trans  &trans                       &kp HOME &kp PG_DN  &kp PG_UP &kp END &trans    &trans            &trans        
-&trans  &kp LC(Z)   &kp LC(X) &kp LC(C) &kp LC(V)  &trans             &trans   &trans     &trans    &trans  &trans    &trans     &trans &trans &trans 
-                     &mo 3   &trans  &trans   &kp BSPC       &trans   &trans  &trans   &trans
+&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6        &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12        &kp INS &kp HOME &kp PG_UP
+&trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans        &kp DEL &kp END &kp PG_UP
+&trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans        &trans
+&trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans        &trans &trans &trans
+        &trans &trans &trans &trans        &trans &trans &trans &trans
 			>;
 		};
 		
@@ -72,11 +72,11 @@
 // |     |     |     |      |      |        |                   |      |       |       |      |       |       | |     |      |      | 
 //                   |      |      |        |        |  |       |      |       |       |
 			bindings = <
-&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &trans  &bt BT_CLR                   &trans  &trans   &trans   &trans  &trans    &trans     &trans &trans &trans 
-&trans &trans &trans &trans  &trans  &trans                       &trans  &trans   &trans   &trans  &trans    &trans     &trans &trans &trans
-&trans &trans &trans &trans  &trans  &trans                       &trans  &trans   &trans   &trans  &trans    &trans            &trans        
-&trans &trans &trans &trans  &trans  &trans                       &trans  &trans   &trans   &trans  &trans    &trans   &trans &trans &trans 
-                           &trans  &trans  &trans    &trans    &trans   &trans  &trans   &trans
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &trans        &trans &trans &trans &trans &trans &trans        &kp PSCRN &kp SLCK &kp PAUSE_BREAK
+&trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans        &trans &trans &trans
+&trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans        &trans
+&trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans        &trans &trans &trans
+        &trans &trans &trans &trans        &trans &trans &trans &trans
 			>;
 		};
 	};
